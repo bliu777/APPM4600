@@ -18,6 +18,9 @@ def driver():
     print('Error message reads:',ier)
 
 # test aitkens
+    Nmax = 98
+    tol = 10e-10
+
     [phat,ier] = aitkens(xstar,tol,Nmax)
     print('the approximate fixed point is:',phat)
     print('f1(xstar):',f1(phat))
